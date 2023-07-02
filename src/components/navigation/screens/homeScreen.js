@@ -12,10 +12,34 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import VenueChoices from '../../venue-choices/venueChoices';
+import Filter from '../../filter/filter';
+import MapResults from '../../map-results/mapResults';
+import VenueDetails from '../../venue-details/venueDetails';
+
 const HomeScreen = ({ navigation }) => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen
+        name="VenueChoices"
+        component={VenueChoices}
+        options={{ unmountOnBlur: true }}
+      />
+      <Stack.Screen
+        name="Filter"
+        component={Filter}
+        options={{ unmountOnBlur: true }}
+      />
+      <Stack.Screen
+        name="MapResults"
+        component={MapResults}
+        options={{ unmountOnBlur: true }}
+      />
+      <Stack.Screen
+        name="VenueDetails"
+        component={VenueDetails}
+        options={{ unmountOnBlur: true }}
+      />
     </Stack.Navigator>
   );
 };

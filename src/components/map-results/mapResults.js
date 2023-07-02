@@ -13,10 +13,10 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
-const Settings = ({ navigation }) => {
+const MapResults = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>📄 Settings</Text>
+      <Text style={styles.title}>📄 Map Results</Text>
     </View>
   );
 };
@@ -35,6 +35,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Settings;
-
+export default MapResults;
 
