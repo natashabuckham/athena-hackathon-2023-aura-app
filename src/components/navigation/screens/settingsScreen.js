@@ -12,6 +12,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import Settings from '../../settings/settings';
+
 const SettingsScreen = ({ navigation }) => {
   return (
     <Stack.Navigator>

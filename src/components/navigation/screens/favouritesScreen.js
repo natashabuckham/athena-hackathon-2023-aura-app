@@ -12,6 +12,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 
+import Favourites from '../../favourites/favourites';
+
 const FavouritesScreen = ({ navigation }) => {
   return (
     <Stack.Navigator>
